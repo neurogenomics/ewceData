@@ -20,7 +20,7 @@ Description: This package provides reference data required for ewce. Expression
             expression studies. The package does not depend upon any particular 
             Single Cell Transcriptome dataset and user defined datasets can be 
             loaded in and used in the analyses.
-URL: https://github.com/Al-Murphy/ewceData
+URL: https://github.com/neurogenomics/ewceData
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
