@@ -25,6 +25,7 @@ License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 2.10)
+Imports: ExperimentHub
 Suggests: 
     knitr,
     BiocStyle,
@@ -32,7 +33,7 @@ Suggests:
     cowplot,
     rmarkdown,
     testthat (>= 3.0.0)
-biocViews: ExperimentData, ExpressionData, Genome, Proteome, MicroarrayData, 
+biocViews: ExperimentData, ExperimentHub, ExpressionData, Genome, Proteome, MicroarrayData, 
             SequencingData, SingleCellData, RNASeqData
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
