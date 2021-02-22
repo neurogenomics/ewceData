@@ -24,8 +24,10 @@ URL: https://github.com/neurogenomics/ewceData
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 2.10)
-Imports: ExperimentHub
+Depends: R (>= 4.1)
+Imports: 
+    ExperimentHub,
+    utils
 Suggests: 
     knitr,
     BiocStyle,

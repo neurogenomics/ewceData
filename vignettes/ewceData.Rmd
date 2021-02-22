@@ -88,7 +88,7 @@ cortex_mrna  = load.linnarsson.sct.data(path)
 To check the data we can quickly plot the distribution of expression of a given gene across all the cell types.
 
 ```{r }
-data(cortex_mrna, package="ewceData")
+cortex_mrna <- cortex_mrna()
 gene="Necab1"
 cellExpDist = data.frame(e=cortex_mrna$exp[gene,],
                           l1=cortex_mrna$annot[

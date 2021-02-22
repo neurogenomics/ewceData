@@ -5,7 +5,7 @@
 \alias{all_mgi}
 \title{All MGI gene symbols}
 \format{
-An object of class \code{character} of length 48440.
+An object of class \code{function} of length 1.
 }
 \source{
 The code to prepare the .Rda file file from the marker file is:
@@ -24,5 +24,9 @@ all_mgi
 }
 \description{
 A dataset containing all MGI symbols
+}
+\examples{
+ewceData::all_mgi()
+
 }
 \keyword{datasets}

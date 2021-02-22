@@ -5,7 +5,7 @@
 \alias{ensembl_transcript_lengths_GCcontent}
 \title{Human Ensembl Transcript Lengths & GC content}
 \format{
-An object of class \code{data.frame} with 217589 rows and 3 columns.
+An object of class \code{function} of length 1.
 }
 \source{
 The code to prepare the .Rda file file from the marker file is:
@@ -27,5 +27,9 @@ ensembl_transcript_lengths_GCcontent
 \description{
 A dataset containing the transcript lengths and GC content for each human
 ensembl gene
+}
+\examples{
+ewceData::ensembl_transcript_lengths_GCcontent()
+
 }
 \keyword{datasets}

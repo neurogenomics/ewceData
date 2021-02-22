@@ -5,7 +5,7 @@
 \alias{schiz_genes}
 \title{Schizophrenia susceptibility genes from CLOZUK}
 \format{
-An object of class \code{character} of length 535.
+An object of class \code{function} of length 1.
 }
 \source{
 Extended data tables downloaded from:
@@ -22,5 +22,8 @@ schiz_genes
 }
 \description{
 Schizophrenia susceptibility genes from CLOZUK
+}
+\examples{
+ewceData::schiz_genes()
 }
 \keyword{datasets}

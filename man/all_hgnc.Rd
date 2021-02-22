@@ -5,7 +5,7 @@
 \alias{all_hgnc}
 \title{All HGNC gene symbols}
 \format{
-An object of class \code{character} of length 36591.
+An object of class \code{function} of length 1.
 }
 \source{
 The code to prepare the .Rda file file from the marker file is:
@@ -24,5 +24,9 @@ all_hgnc
 }
 \description{
 A dataset containing all HGNC symbols
+}
+\examples{
+ewceData::all_hgnc()
+
 }
 \keyword{datasets}

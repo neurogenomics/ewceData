@@ -5,7 +5,7 @@
 \alias{mgi_synonym_data}
 \title{MGI synonym data}
 \format{
-An object of class \code{data.frame} with 55834 rows and 12 columns.
+An object of class \code{function} of length 1.
 }
 \source{
 \code{
@@ -22,5 +22,8 @@ mgi_synonym_data
 }
 \description{
 MGI synonym data
+}
+\examples{
+ewceData::mgi_synonym_data()
 }
 \keyword{datasets}

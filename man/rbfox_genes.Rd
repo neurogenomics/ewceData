@@ -5,7 +5,7 @@
 \alias{rbfox_genes}
 \title{Rbfox binding genes}
 \format{
-An object of class \code{character} of length 4143.
+An object of class \code{function} of length 1.
 }
 \source{
 from supplementary table 1 of HITS-CLIP and Integrative Modeling Define the
@@ -23,5 +23,8 @@ rbfox_genes
 }
 \description{
 Rbfox binding genes
+}
+\examples{
+ewceData::rbfox_genes()
 }
 \keyword{datasets}

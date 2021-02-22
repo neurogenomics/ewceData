@@ -5,7 +5,7 @@
 \alias{example_genelist}
 \title{Example Gene list}
 \format{
-An object of class \code{character} of length 22.
+An object of class \code{function} of length 1.
 }
 \source{
 These were obtained from two sources:
@@ -16,5 +16,8 @@ example_genelist
 }
 \description{
 A list of genes genetically associated with Alzheimer's disease.
+}
+\examples{
+ewceData::example_genelist()
 }
 \keyword{datasets}

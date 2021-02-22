@@ -5,7 +5,7 @@
 \alias{tt_alzh_BA44}
 \title{Example table of differential expression (Alzheimer's BA44)}
 \format{
-An object of class \code{data.frame} with 21745 rows and 7 columns.
+An object of class \code{function} of length 1.
 }
 \source{
 The table was determined based on data associated with the paper with
@@ -17,5 +17,8 @@ tt_alzh_BA44
 \description{
 A list of genes found to be differentially expressed in the BA44 in
 Alzheimer's disease.
+}
+\examples{
+ewceData::tt_alzh_BA44()
 }
 \keyword{datasets}

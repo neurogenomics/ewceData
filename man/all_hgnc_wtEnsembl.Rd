@@ -5,7 +5,7 @@
 \alias{all_hgnc_wtEnsembl}
 \title{All HGNC gene symbols with ENSEMBL gene IDs}
 \format{
-An object of class \code{data.frame} with 64029 rows and 2 columns.
+An object of class \code{function} of length 1.
 }
 \source{
 The code to prepare the .Rda file file from the marker file is:
@@ -24,5 +24,9 @@ all_hgnc_wtEnsembl
 \description{
 A dataset containing all HGNC symbols in first column, then ensembl_gene_id
 in second column
+}
+\examples{
+ewceData::all_hgnc_wtEnsembl()
+
 }
 \keyword{datasets}

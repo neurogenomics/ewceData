@@ -5,7 +5,7 @@
 \alias{hpsd_genes}
 \title{Human post-synaptic density}
 \format{
-An object of class \code{character} of length 1461.
+An object of class \code{function} of length 1.
 }
 \source{
 From Supplementary Table 2 of
@@ -21,5 +21,8 @@ hpsd_genes
 }
 \description{
 Human post-synaptic density
+}
+\examples{
+ewceData::hpsd_genes()
 }
 \keyword{datasets}

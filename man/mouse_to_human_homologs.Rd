@@ -5,7 +5,7 @@
 \alias{mouse_to_human_homologs}
 \title{Table of Human-->Mouse orthologs for all human genes}
 \format{
-An object of class \code{data.frame} with 15604 rows and 6 columns.
+An object of class \code{function} of length 1.
 }
 \source{
 The code to prepare the .Rda file file from the marker file is:
@@ -49,5 +49,9 @@ Ensembl gene IDs for all human orthologs for mouse genes. Whenin the mouse
 genes are defined based on a list of all MGI markers from the MGI website
 (downloaded as MRK_List2.rpt file from
 http://www.informatics.jax.org/downloads/reports/MRK_List2.rpt)
+}
+\examples{
+ewceData::mouse_to_human_homologs()
+
 }
 \keyword{datasets}

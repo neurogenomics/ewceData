@@ -5,7 +5,7 @@
 \alias{id_genes}
 \title{Intellectual disability genes}
 \format{
-An object of class \code{character} of length 1159.
+An object of class \code{function} of length 1.
 }
 \source{
 from http://compbio.charite.de/hpoweb/showterm?id=HP:0001249
@@ -21,5 +21,8 @@ id_genes
 }
 \description{
 Intellectual disability genes
+}
+\examples{
+ewceData::id_genes()
 }
 \keyword{datasets}

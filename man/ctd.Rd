@@ -6,7 +6,7 @@
 \title{The genes from Karolinska cortex/hippocampus and hypothalamus
 single cell transcriptome datasets}
 \format{
-An object of class \code{list} of length 2.
+An object of class \code{function} of length 1.
 }
 \source{
 The datasets were downloaded from the website associated with the paper &
@@ -20,5 +20,8 @@ ctd
 }
 \description{
 All genes from the merged SCT dataset
+}
+\examples{
+ewceData::ctd()
 }
 \keyword{datasets}
