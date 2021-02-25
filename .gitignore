@@ -1,6 +1,8 @@
 .Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+ewceData.Rproj
 doc
 Meta
-ewceData.Rproj
-.Rhistory
 inst/.DS_Store
