@@ -24,6 +24,6 @@ schiz_genes
 Schizophrenia susceptibility genes from CLOZUK
 }
 \examples{
-ewceData::schiz_genes()
+schiz_genes <- ewceData::schiz_genes()
 }
 \keyword{datasets}

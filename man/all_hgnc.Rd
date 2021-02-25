@@ -26,7 +26,7 @@ all_hgnc
 A dataset containing all HGNC symbols
 }
 \examples{
-ewceData::all_hgnc()
+all_hgnc <- ewceData::all_hgnc()
 
 }
 \keyword{datasets}

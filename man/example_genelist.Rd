@@ -18,6 +18,6 @@ example_genelist
 A list of genes genetically associated with Alzheimer's disease.
 }
 \examples{
-ewceData::example_genelist()
+example_genelist <- ewceData::example_genelist()
 }
 \keyword{datasets}

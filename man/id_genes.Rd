@@ -23,6 +23,6 @@ id_genes
 Intellectual disability genes
 }
 \examples{
-ewceData::id_genes()
+id_genes <- ewceData::id_genes()
 }
 \keyword{datasets}

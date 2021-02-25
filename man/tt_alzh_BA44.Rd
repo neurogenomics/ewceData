@@ -19,6 +19,6 @@ A list of genes found to be differentially expressed in the BA44 in
 Alzheimer's disease.
 }
 \examples{
-ewceData::tt_alzh_BA44()
+tt_alzh_BA44 <- ewceData::tt_alzh_BA44()
 }
 \keyword{datasets}

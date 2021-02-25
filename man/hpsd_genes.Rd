@@ -23,6 +23,6 @@ hpsd_genes
 Human post-synaptic density
 }
 \examples{
-ewceData::hpsd_genes()
+hpsd_genes <- ewceData::hpsd_genes()
 }
 \keyword{datasets}

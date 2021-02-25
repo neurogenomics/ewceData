@@ -26,7 +26,7 @@ A dataset containing all HGNC symbols in first column, then ensembl_gene_id
 in second column
 }
 \examples{
-ewceData::all_hgnc_wtEnsembl()
+all_hgnc_wtEnsembl <- ewceData::all_hgnc_wtEnsembl()
 
 }
 \keyword{datasets}

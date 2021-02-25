@@ -26,7 +26,7 @@ all_mgi
 A dataset containing all MGI symbols
 }
 \examples{
-ewceData::all_mgi()
+all_mgi <- ewceData::all_mgi()
 
 }
 \keyword{datasets}

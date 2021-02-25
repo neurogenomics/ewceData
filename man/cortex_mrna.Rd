@@ -24,6 +24,6 @@ cortex_mrna
 Karolinska Cortex/Hippocamus dataset subsample
 }
 \examples{
-ewceData::cortex_mrna()
+cortex_mrna <- ewceData::cortex_mrna()
 }
 \keyword{datasets}

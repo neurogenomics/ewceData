@@ -26,6 +26,8 @@ extracting the expression and annotation data from the publically
 downloadable Linnarsson lab Cortex/Hippocampus dataset
 }
 \examples{
+#increase timeout for download
+options(timeout=1000)
 # Load the single cell data
 linURL <- "goo.gl/r5Y24y"
 download.file(linURL, destfile = "expression_mRNA_17-Aug-2014.txt")

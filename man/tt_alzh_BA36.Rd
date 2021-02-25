@@ -19,6 +19,6 @@ A list of genes found to be differentially expressed in the BA36 in
 Alzheimer's disease.
 }
 \examples{
-ewceData::tt_alzh_BA36()
+tt_alzh_BA36 <- ewceData::tt_alzh_BA36()
 }
 \keyword{datasets}

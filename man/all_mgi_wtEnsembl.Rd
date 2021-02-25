@@ -26,7 +26,7 @@ A dataset containing all MGI symbols in first column, then ensembl_gene_id
 in second column
 }
 \examples{
-ewceData::all_mgi_wtEnsembl()
+all_mgi_wtEnsembl <- ewceData::all_mgi_wtEnsembl()
 
 }
 \keyword{datasets}

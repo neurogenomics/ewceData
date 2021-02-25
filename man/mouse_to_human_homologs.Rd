@@ -51,7 +51,7 @@ genes are defined based on a list of all MGI markers from the MGI website
 http://www.informatics.jax.org/downloads/reports/MRK_List2.rpt)
 }
 \examples{
-ewceData::mouse_to_human_homologs()
+mouse_to_human_homologs <- ewceData::mouse_to_human_homologs()
 
 }
 \keyword{datasets}

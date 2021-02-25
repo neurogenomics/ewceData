@@ -22,6 +22,6 @@ ctd
 All genes from the merged SCT dataset
 }
 \examples{
-ewceData::ctd()
+ctd <- ewceData::ctd()
 }
 \keyword{datasets}

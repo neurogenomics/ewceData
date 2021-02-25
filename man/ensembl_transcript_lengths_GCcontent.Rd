@@ -29,7 +29,8 @@ A dataset containing the transcript lengths and GC content for each human
 ensembl gene
 }
 \examples{
-ewceData::ensembl_transcript_lengths_GCcontent()
+ensembl_transcript_lengths_GCcontent <- 
+    ewceData::ensembl_transcript_lengths_GCcontent()
 
 }
 \keyword{datasets}

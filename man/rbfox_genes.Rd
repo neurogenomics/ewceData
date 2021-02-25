@@ -25,6 +25,6 @@ rbfox_genes
 Rbfox binding genes
 }
 \examples{
-ewceData::rbfox_genes()
+rbfox_genes <- ewceData::rbfox_genes()
 }
 \keyword{datasets}

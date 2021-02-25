@@ -24,6 +24,6 @@ mgi_synonym_data
 MGI synonym data
 }
 \examples{
-ewceData::mgi_synonym_data()
+mgi_synonym_data <- ewceData::mgi_synonym_data()
 }
 \keyword{datasets}
