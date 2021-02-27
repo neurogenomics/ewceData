@@ -3,7 +3,7 @@ test_that("loading of linnarsson dataset", {
     # from vignette
     #increase timeout time so doesn't fail
     options(timeout=1000)
-    download.file("goo.gl/r5Y24y",
+    download.file("https://goo.gl/r5Y24y",
         destfile = "expression_mRNA_17-Aug-2014.txt"
     )
 

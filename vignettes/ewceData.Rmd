@@ -77,7 +77,7 @@ theme_set(theme_cowplot())
 ```
 
 ```
-download.file("goo.gl/r5Y24y",
+download.file("https://goo.gl/r5Y24y",
     destfile="expression_mRNA_17-Aug-2014.txt") 
 
 path = "expression_mRNA_17-Aug-2014.txt"
@@ -88,11 +88,11 @@ cortex_mrna  = load.linnarsson.sct.data(path)
 To check the data we can quickly plot the distribution of expression of a given gene across all the cell types.
 
 ```{r }
-cortex_mrna <- cortex_mrna()
+cortex_mrna_dt <- cortex_mrna()
 gene="Necab1"
-cellExpDist = data.frame(e=cortex_mrna$exp[gene,],
-                          l1=cortex_mrna$annot[
-                            colnames(cortex_mrna$exp),]$level1class)
+cellExpDist = data.frame(e=cortex_mrna_dt$exp[gene,],
+                          l1=cortex_mrna_dt$annot[
+                            colnames(cortex_mrna_dt$exp),]$level1class)
 ggplot(cellExpDist) + geom_boxplot(aes(x=l1,y=e)) + xlab("Cell type") + 
   ylab("Unique Molecule Count") + 
   theme(axis.text.x = element_text(angle = 90, hjust = 1)) 

@@ -18,7 +18,7 @@
 #' #increase timeout for download
 #' options(timeout=1000)
 #' # Load the single cell data
-#' linURL <- "goo.gl/r5Y24y"
+#' linURL <- "https://goo.gl/r5Y24y"
 #' download.file(linURL, destfile = "expression_mRNA_17-Aug-2014.txt")
 #' path <- "expression_mRNA_17-Aug-2014.txt"
 #' cortex_mrna <- load.linnarsson.sct.data(path)
