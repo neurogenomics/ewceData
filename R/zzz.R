@@ -1,5 +1,6 @@
 #' @import ExperimentHub ExperimentHubData
 #' @importFrom AnnotationHub query
+#' @importFrom utils read.csv
 #.onLoad <- function(libname, pkgname) {
 #    fl <- system.file("extdata", "metadata.csv", package=pkgname)
 #    titles <- read.csv(fl, stringsAsFactors=FALSE)$Title
@@ -8,10 +9,10 @@
 .onLoad <- function(libname, pkgname) {
   objs <- read.csv(system.file("extdata", "metadata.csv",
                                package="ewceData"),
-                   stringsAsFactors=FALSE)$Title
+                   stringsAsFactors=FALSE,fileEncoding = "UTF-8-BOM")$Title
   if (!length(objs))
     stop("no objects found")
-  
+
   ## Functions to load objects by name:
   ns <- asNamespace(pkgname)
   sapply(objs,
@@ -23,7 +24,7 @@
              ehid <- names(query(eh, xx))
              if (!length(ehid))
                stop(paste0("resource ", xx,
-                           "not found in ExperimentHub"))
+                           " not found in ExperimentHub"))
              if (metadata)
                eh[ehid]
              else eh[[ehid]]

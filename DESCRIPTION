@@ -38,8 +38,8 @@ Suggests:
     rmarkdown,
     markdown,
     testthat (>= 3.0.0)
-biocViews: ExperimentData, ExperimentHub, ExpressionData, Genome, Proteome, MicroarrayData, 
-            SequencingData, SingleCellData, RNASeqData
+biocViews: ExperimentData, ExperimentHub, ExpressionData, Genome, Proteome, 
+            MicroarrayData, SequencingData, SingleCellData, RNASeqData
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
