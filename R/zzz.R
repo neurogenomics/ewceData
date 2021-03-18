@@ -21,7 +21,9 @@
              if (!isNamespaceLoaded("ExperimentHub"))
                attachNamespace("ExperimentHub")
              eh <- query(ExperimentHub(), "ewceData")
-             ehid <- names(query(eh, xx))
+             #ehid <- names(query(eh, xx))
+             #grepl exact match, avoid issues with all_mgi and all_mgi_wtEnsembl
+             ehid <- names(query(eh, paste0("\\b",xx,"\\b")))
              if (!length(ehid))
                stop(paste0("resource ", xx,
                            " not found in ExperimentHub"))
