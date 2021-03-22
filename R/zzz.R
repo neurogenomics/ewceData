@@ -1,4 +1,4 @@
-#' @import ExperimentHub ExperimentHubData
+#' @import ExperimentHub
 #' @importFrom AnnotationHub query
 #' @importFrom utils read.csv
 #.onLoad <- function(libname, pkgname) {

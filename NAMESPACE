@@ -2,7 +2,6 @@
 
 export(load.linnarsson.sct.data)
 import(ExperimentHub)
-import(ExperimentHubData)
 import(utils)
 importFrom(AnnotationHub,query)
 importFrom(utils,read.csv)

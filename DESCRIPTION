@@ -1,6 +1,6 @@
 Package: ewceData
 Title: The ewceData package provides reference data required for ewce
-Version: 0.99.8
+Version: 0.99.9
 Authors@R: 
     c(person(given = "Alan",
            family = "Murphy",
@@ -25,8 +25,7 @@ License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 4.1), 
-        ExperimentHub, 
-        ExperimentHubData
+        ExperimentHub
 Imports: 
     utils,
     AnnotationHub
