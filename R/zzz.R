@@ -1,6 +1,6 @@
 #' @import ExperimentHub
-#' @importFrom AnnotationHub query
-#' @importFrom AnnotationHub mcols
+# @importFrom AnnotationHub query
+# @importFrom AnnotationHub mcols
 #' @importFrom utils read.csv
 #.onLoad <- function(libname, pkgname) {
 #  objs <- read.csv(system.file("extdata", "metadata.csv",

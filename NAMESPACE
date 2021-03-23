@@ -3,6 +3,4 @@
 export(load.linnarsson.sct.data)
 import(ExperimentHub)
 import(utils)
-importFrom(AnnotationHub,mcols)
-importFrom(AnnotationHub,query)
 importFrom(utils,read.csv)
