@@ -33,6 +33,7 @@
 #}
 .onLoad <- function(libname, pkgname) {
   fl <- system.file("extdata", "metadata.csv", package=pkgname)
-  titles <- read.csv(fl, stringsAsFactors=FALSE)$Title
+  titles <- read.csv(fl, stringsAsFactors=FALSE,
+                      fileEncoding = "UTF-8-BOM")$Title
   createHubAccessors(pkgname, titles)
 }

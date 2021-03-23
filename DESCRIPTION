@@ -1,6 +1,6 @@
 Package: ewceData
 Title: The ewceData package provides reference data required for ewce
-Version: 0.99.10
+Version: 0.99.11
 Authors@R: 
     c(person(given = "Alan",
            family = "Murphy",
@@ -27,8 +27,7 @@ LazyData: true
 Depends: R (>= 4.1), 
         ExperimentHub
 Imports: 
-    utils,
-    AnnotationHub
+    utils
 Suggests: 
     knitr,
     BiocStyle,
