@@ -1,6 +1,6 @@
 Package: ewceData
 Title: The ewceData package provides reference data required for ewce
-Version: 0.99.11
+Version: 0.99.12
 Authors@R: 
     c(person(given = "Alan",
            family = "Murphy",
