@@ -4,6 +4,7 @@ author: "Alan Murphy and Nathan Skene"
 date: "`r Sys.Date()`"
 output:
   html_document:
+    toc: true
     df_print: paged
 csl: ../inst/extdata/nature.csl
 vignette: >
@@ -63,29 +64,45 @@ The data in the `ewceData` package are used throughout EWCE's associated vignett
 
   * **tt_alzh** - the BA46 in Alzheimer's disease.
 
-This package also contains a function to load the single cell transcriptome (SCT) data. For the purposes of this example we will use the dataset described in *"Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq", Science, 2015*. The following code downloads this file, passes it to the load.linnarsson.sct.data() function which extracts the expression and annotation data and returns these as a list. 
-
-Important note: you do NOT have to format your input single cell data like the Linnarsson data. Just read it into R such that you have an expression matrix and an annotation data frame. The three columns that you must have in the annotation data frame are "cell_id", "level1class" and "level2class". 
-
-You can then load the package:
+All the data can be loaded by using the dataset name:
 
 ```{r setup}
 library(ewceData)
+```
+
+```{r }
+ensembl_transcript_lengths_GCcontent <- ensembl_transcript_lengths_GCcontent()
+mouse_to_human_homologs <- mouse_to_human_homologs()
+all_mgi_wtEnsembl <- all_mgi_wtEnsembl()
+all_mgi <- all_mgi()
+all_hgnc_wtEnsembl <- all_hgnc_wtEnsembl()
+all_hgnc <- all_hgnc()
+example_genelist <- example_genelist()
+tt_alz <- tt_alzh()
+tt_alzh_BA36 <- tt_alzh_BA36()
+tt_alzh_BA44 <- tt_alzh_BA44()
+ctd <- ctd()
+schiz_genes <- schiz_genes()
+hpsd_genes <- hpsd_genes()
+rbfox_genes <- rbfox_genes()
+id_genes <- id_genes()
+cortex_mrna <- cortex_mrna()
+alzh_gwas_top100 <- alzh_gwas_top100()
+mgi_synonym_data <- mgi_synonym_data()
+```
+
+This package also contains a single cell transcriptome (SCT) data from *"Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq", Science, 2015* with the expression and annotation data, formatted as a CTD object.
+
+Important note: The code (available in inst/scripts/make-data.R) to derive this data can be used on other downloaded paper's data. Note you do NOT have to format your input single cell data like the Linnarsson data. Just read it into R such that you have an expression matrix and an annotation data frame. The three columns that you must have in the annotation data frame are "cell_id", "level1class" and "level2class". 
+
+To check the data, we can quickly plot the distribution of expression of a given gene across all the cell types:
+
+```{r setup2}
 library(ggplot2)
 library(cowplot)
 theme_set(theme_cowplot())
 ```
 
-```
-download.file("https://goo.gl/r5Y24y",
-    destfile="expression_mRNA_17-Aug-2014.txt") 
-
-path = "expression_mRNA_17-Aug-2014.txt"
-
-cortex_mrna  = load.linnarsson.sct.data(path)
-```
-
-To check the data we can quickly plot the distribution of expression of a given gene across all the cell types.
 
 ```{r }
 cortex_mrna_dt <- cortex_mrna()
