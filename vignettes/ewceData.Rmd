@@ -48,9 +48,11 @@ The *EWCE* method can be applied to any gene list. In the paper we reported it's
 
 The data in the `ewceData` package are used throughout EWCE's associated vignette to give insight into its functionality. These datasets are:
 
-* **cortex_mrna** - Karolinska Cortex/Hippocamus dataset subsample
+* **cortex_mrna** - Karolinska Cortex/Hippocamus dataset
 
-* **celltype_data**/**ctd** - The genes from Karolinska cortex/hippocampus and hypothalamus single cell transcriptome datasets
+* **hypothalamus_mrna** - Karolinska Hypothalamus dataset
+
+* **celltype_data**/**ctd** - Subset of the genes from Karolinska cortex/hippocampus and hypothalamus single cell transcriptome datasets.
 
 * **example_genelist** - A list of genes genetically associated with Alzheimer's disease.
 
@@ -87,6 +89,7 @@ hpsd_genes <- hpsd_genes()
 rbfox_genes <- rbfox_genes()
 id_genes <- id_genes()
 cortex_mrna <- cortex_mrna()
+hypothalamus_mrna <- hypothalamus_mrna()
 alzh_gwas_top100 <- alzh_gwas_top100()
 mgi_synonym_data <- mgi_synonym_data()
 ```
