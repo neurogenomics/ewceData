@@ -19,7 +19,7 @@ get_ExperimentHub <- function()
 #internal functions to call the data quickly
 #doesn't require multiple calls to eh
 #' tt_alzh
-#' 
+#'
 #' \code{tt_alzh} returns the tt_alzh dataset
 #' @return tt_alzh dataset
 #' @examples tt_alzh()
@@ -31,7 +31,7 @@ tt_alzh <- function()
 }
 
 #' tt_alzh_BA36
-#' 
+#'
 #' \code{tt_alzh_BA36} returns the tt_alzh_BA36 dataset
 #' @return tt_alzh_BA36 dataset
 #' @examples tt_alzh_BA36()
@@ -42,7 +42,7 @@ tt_alzh_BA36 <- function(){
 }
 
 #' tt_alzh_BA44
-#' 
+#'
 #' \code{tt_alzh_BA44} returns the tt_alzh_BA44 dataset
 #' @return tt_alzh_BA44 dataset
 #' @examples tt_alzh_BA44()
@@ -53,7 +53,7 @@ tt_alzh_BA44 <- function(){
 }
 
 #' ctd
-#' 
+#'
 #' \code{ctd} returns the ctd dataset
 #' @return ctd dataset
 #' @examples ctd()
@@ -64,7 +64,7 @@ ctd <- function(){
 }
 
 #' example_genelist
-#' 
+#'
 #' \code{example_genelist} returns the example_genelist dataset
 #' @return example_genelist dataset
 #' @examples example_genelist()
@@ -75,7 +75,7 @@ example_genelist <- function(){
 }
 
 #' mouse_to_human_homologs
-#' 
+#'
 #' \code{mouse_to_human_homologs} returns the mouse_to_human_homologs dataset
 #' @return mouse_to_human_homologs dataset
 #' @examples mouse_to_human_homologs()
@@ -86,7 +86,7 @@ mouse_to_human_homologs <- function(){
 }
 
 #' all_mgi
-#' 
+#'
 #' \code{all_mgi} returns the all_mgi dataset
 #' @return all_mgi dataset
 #' @examples all_mgi()
@@ -97,7 +97,7 @@ all_mgi<- function(){
 }
 
 #' all_hgnc
-#' 
+#'
 #' \code{all_hgnc} returns the all_hgnc dataset
 #' @return all_hgnc dataset
 #' @examples all_hgnc()
@@ -108,7 +108,7 @@ all_hgnc  <- function(){
 }
 
 #' cortex_mrna
-#' 
+#'
 #' \code{cortex_mrna} returns the cortex_mrna dataset
 #' @return cortex_mrna dataset
 #' @examples cortex_mrna()
@@ -119,7 +119,7 @@ cortex_mrna  <- function(){
 }
 
 #' alzh_gwas_top100
-#' 
+#'
 #' \code{alzh_gwas_top100} returns the alzh_gwas_top100 dataset
 #' @return alzh_gwas_top100 dataset
 #' @examples alzh_gwas_top100
@@ -130,7 +130,7 @@ alzh_gwas_top100  <- function(){
 }
 
 #' ensembl_transcript_lengths_GCcontent
-#' 
+#'
 #' \code{ensembl_transcript_lengths_GCcontent} returns the ensembl_transcript_lengths_GCcontent dataset
 #' @return ensembl_transcript_lengths_GCcontent dataset
 #' @examples ensembl_transcript_lengths_GCcontent()
@@ -141,7 +141,7 @@ ensembl_transcript_lengths_GCcontent  <- function(){
 }
 
 #' all_mgi_wtEnsembl
-#' 
+#'
 #' \code{all_mgi_wtEnsembl} returns the all_mgi_wtEnsembl dataset
 #' @return all_mgi_wtEnsembl dataset
 #' @examples all_mgi_wtEnsembl()
@@ -152,7 +152,7 @@ all_mgi_wtEnsembl <- function(){
 }
 
 #' all_hgnc_wtEnsembl
-#' 
+#'
 #' \code{all_hgnc_wtEnsembl} returns the all_hgnc_wtEnsembl dataset
 #' @return all_hgnc_wtEnsembl dataset
 #' @examples all_hgnc_wtEnsembl()
@@ -163,7 +163,7 @@ all_hgnc_wtEnsembl <- function(){
 }
 
 #' schiz_genes
-#' 
+#'
 #' \code{schiz_genes} returns the schiz_genes dataset
 #' @return schiz_genes dataset
 #' @examples schiz_genes()
@@ -174,7 +174,7 @@ schiz_genes <- function(){
 }
 
 #' hpsd_genes
-#' 
+#'
 #' \code{hpsd_genes} returns the hpsd_genes dataset
 #' @return hpsd_genes dataset
 #' @examples hpsd_genes()
@@ -185,7 +185,7 @@ hpsd_genes <- function(){
 }
 
 #' rbfox_genes
-#' 
+#'
 #' \code{rbfox_genes} returns the rbfox_genes dataset
 #' @return rbfox_genes dataset
 #' @examples rbfox_genes()
@@ -196,7 +196,7 @@ rbfox_genes <- function(){
 }
 
 #' id_genes
-#' 
+#'
 #' \code{id_genes} returns the id_genes dataset
 #' @return id_genes dataset
 #' @examples id_genes()
@@ -207,7 +207,7 @@ id_genes <- function(){
 }
 
 #' mgi_synonym_data
-#' 
+#'
 #' \code{mgi_synonym_data} returns the mgi_synonym_data dataset
 #' @return mgi_synonym_data dataset
 #' @examples mgi_synonym_data()
@@ -215,4 +215,16 @@ id_genes <- function(){
 mgi_synonym_data <- function(){
   eh <- get_ExperimentHub()
   mgi_synonym_data <- eh[["EH5383"]]
+}
+
+
+#' hypothalamus_mrna
+#'
+#' \code{hypothalamus_mrna} returns the hypothalamus_mrna dataset
+#' @return hypothalamus_mrna dataset
+#' @examples hypothalamus_mrna()
+#' @export
+hypothalamus_mrna  <- function(){
+  eh <- get_ExperimentHub()
+  hypothalamus_mrna <- eh[["EH5446"]]
 }
