@@ -4,7 +4,13 @@
 \alias{id_genes}
 \title{id_genes}
 \usage{
-id_genes()
+id_genes(localHub = FALSE)
+}
+\arguments{
+\item{localHub}{If working offline, add argument localHub=TRUE to work
+with a local, non-updated hub; It will only have resources available that
+have previously been downloaded. If offline, Please also see BiocManager
+vignette section on offline use to ensure proper functionality.}
 }
 \value{
 id_genes dataset

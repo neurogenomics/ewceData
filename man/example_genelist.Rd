@@ -4,7 +4,13 @@
 \alias{example_genelist}
 \title{example_genelist}
 \usage{
-example_genelist()
+example_genelist(localHub = FALSE)
+}
+\arguments{
+\item{localHub}{If working offline, add argument localHub=TRUE to work
+with a local, non-updated hub; It will only have resources available that
+have previously been downloaded. If offline, Please also see BiocManager
+vignette section on offline use to ensure proper functionality.}
 }
 \value{
 example_genelist dataset

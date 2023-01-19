@@ -4,7 +4,13 @@
 \alias{ensembl_transcript_lengths_GCcontent}
 \title{ensembl_transcript_lengths_GCcontent}
 \usage{
-ensembl_transcript_lengths_GCcontent()
+ensembl_transcript_lengths_GCcontent(localHub = FALSE)
+}
+\arguments{
+\item{localHub}{If working offline, add argument localHub=TRUE to work
+with a local, non-updated hub; It will only have resources available that
+have previously been downloaded. If offline, Please also see BiocManager
+vignette section on offline use to ensure proper functionality.}
 }
 \value{
 ensembl_transcript_lengths_GCcontent dataset

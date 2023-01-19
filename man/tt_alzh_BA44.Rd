@@ -4,7 +4,13 @@
 \alias{tt_alzh_BA44}
 \title{tt_alzh_BA44}
 \usage{
-tt_alzh_BA44()
+tt_alzh_BA44(localHub = FALSE)
+}
+\arguments{
+\item{localHub}{If working offline, add argument localHub=TRUE to work
+with a local, non-updated hub; It will only have resources available that
+have previously been downloaded. If offline, Please also see BiocManager
+vignette section on offline use to ensure proper functionality.}
 }
 \value{
 tt_alzh_BA44 dataset
