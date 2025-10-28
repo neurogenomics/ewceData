@@ -1,5 +1,10 @@
 # ewceData 1.17.1
 
+* Declare missing dependency (`rbibutils`) for vignette.
+
+
+# ewceData 1.17.1
+
 * Update maintainer (Alan -> Hiru)
 
 
