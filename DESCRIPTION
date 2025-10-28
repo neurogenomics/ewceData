@@ -1,12 +1,17 @@
 Package: ewceData
 Title: The ewceData package provides reference data required for ewce
-Version: 1.17.0
+Version: 1.17.1
 Authors@R: 
     c(person(given = "Alan",
            family = "Murphy",
-           role = c("cre"),
+           role = c("aut"),
            email = "alanmurph94@hotmail.com",
            comment = c(ORCID = "0000-0002-2487-8753")),
+    person(given="Hiranyamaya",
+           family="Dash",
+           email = "hdash.work@gmail.com",
+           role = c("cre"),
+           comment = c(ORCID = "0009-0005-5514-505X")),
     person(given = "Nathan",
            family = "Skene",
            role = c("aut"),
@@ -36,6 +41,6 @@ Suggests:
 biocViews: ExperimentData, ExperimentHub, ExpressionData, Genome, Proteome, 
             MicroarrayData, SequencingData, SingleCellData, RNASeqData
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.3
 VignetteBuilder: knitr
 Config/testthat/edition: 3
